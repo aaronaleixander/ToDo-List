@@ -29,10 +29,21 @@
         <input id="start-date" class="due-date" type="date">
         <span></span>
         <br><br>
+
+        <label for="end-date">End Date: </label>
+        <input id="end-date" class="due-date" type="date">
+        <span></span>
+        <br><br>
+
+        <label for="is-complete">Completed: </label>
+        <input id="is-complete" class="due-date" type="checkbox">
+        <br><br>
+        
     </div>
 
     <script src="node_modules/js-datepicker/dist/datepicker.min.js"></script>
     <script src="scripts/mainJS.js"></script>
     <script> const picker = datepicker(".due-date"); </script>
+
 </body>
 </html>
