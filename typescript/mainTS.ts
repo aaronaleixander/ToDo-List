@@ -24,7 +24,20 @@ window.onload = function() {
     let addBtn = <HTMLButtonElement>
         document.querySelector("#create-item > button");
         addBtn.onclick = processNewItem;
+
+        let readItemBtn =<HTMLElement> document.querySelector("#read-item > button");
+        readItemBtn.onclick = readItem;
 }
+
+const itemKey:string = "todo";
+function readItem(){
+    //get item from storage
+    let item:ToDoItem = JSON.parse(localStorage.getItem("itemKey"));
+
+    // display data
+    alert(item.title);
+    alert(item.description);
+} 
 
 function getItemFromForm():ToDoItem{
     let item = new ToDoItem();
@@ -77,6 +90,6 @@ function saveItem(item:ToDoItem):void {
     console.log(data);
     //ensure user can use localStorage
     if(typeof(Storage) != "undefined") {
-        localStorage.setItem("todo", data);
+        localStorage.setItem(itemKey, data);
     }
 }
