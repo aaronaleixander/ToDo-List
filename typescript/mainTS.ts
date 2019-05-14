@@ -59,10 +59,29 @@ function getItemFromForm():ToDoItem{
 }
 
 function processNewItem() {
+ 
     let item:ToDoItem = getItemFromForm();
     saveItem(item);
     notifyUser();
     clearForm();
+    displayToDo(item);
+}
+
+function displayToDo( item:ToDoItem ) {
+    let todoList = document.getElementById("todo-list");
+    let itemPar = document.createElement("p");
+    itemPar.innerText = item.title;
+    itemPar.setAttribute("data-description" , item.description);
+    itemPar.onclick = toggleItemComplete;
+    todoList.appendChild(itemPar);
+}
+
+function toggleItemComplete() {
+    let currItem:HTMLElement = this;
+    currItem.classList.toggle("completed");
+    let title = currItem.innerText;
+    let description = currItem.getAttribute("data-description");
+    alert("You completed " + title + ":" + description);
 }
 
 function clearForm() {

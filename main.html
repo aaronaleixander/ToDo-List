@@ -7,7 +7,7 @@
     <title>ToDo List</title>
     <meta name="description" content="Create a free to do list.">
     <link rel="stylesheet" href="css/site.css">
-    <link rel="stylesheet" href="node_modules/js-datepicker/dist/datepicker.min.css">
+    <link rel="stylesheet" href="css/datepicker.min.css">
  
 </head>
 <body>
@@ -48,20 +48,27 @@
         <br><br>
 
 
-    
         
         <button type="button">Add ToDo Item</button>
+        
+        
+ 
+
         <br><br>
         </div>
 
-        <div id = "read-item">
+        <div id="read-item">
             <button type="button">Read Item</button>
         </div>
 
+    
+
+    <div id="todo-list">
+
     </div>
 
-    <script src="node_modules/js-datepicker/dist/datepicker.min.js"></script>
-    <script src="scripts/mainJS.js"></script>
+    <script src="scripts/datepicker.min.js"></script>
+    <script src="scripts/mainTS.js"></script>
     <script> const picker = datepicker(".due-date"); </script>
 
 </body>
