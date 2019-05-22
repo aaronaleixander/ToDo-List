@@ -1,13 +1,90 @@
-div#todo-list > p, p.completed {
-    background-color: green;
-    color: white;
-    padding:.5em;
-    border-radius: .2em;
-    display: inline-block;
-    margin-right: .75;
-}
 
 p.completed {
      text-decoration: line-through;
      background-color: lightgreen !important;
+     
 }
+
+#grad {
+    background-image: linear-gradient(to bottom, rgb(66, 86, 244), rgb(66, 244, 173));
+  
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 4em;
+    text-shadow: 5px 5px rgb(66, 244, 152)
+}
+
+#create-item {
+    margin-left: 555px;
+    margin-top: 3em;
+    border-radius: 25px;
+    background-color: rgb(35, 38, 39);
+    border: solid 1px white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 400px;
+    width: 400px;
+    
+    
+}
+
+#sched {
+    color: white;
+    margin-left: 140px;
+    margin-right: 163px;
+    border: solid 1px white;
+    font-family: 'Kaushan Script', cursive;
+}
+
+#todo-list {
+    margin-top: 3em;
+    border-radius: 25px;
+    background-color: rgb(35, 38, 39);
+    border: solid 1px white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 400px;
+    width: 400px;
+    margin-left: 555px;
+    color: white;
+    
+    
+    
+}
+
+#lbl {
+    color: white;
+    font-size: 20px;
+    font-family: 'Kaushan Script', cursive;
+    margin-left: 30px;
+}
+
+#buttons {
+    margin-left: 610px;
+ 
+}
+
+#add-item{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20px;
+    border-radius: 15%;
+    color: black;
+    background-color: rgb(66, 244, 152);
+    border-color: black;
+}
+
+#read-item {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20px;
+    margin-left: 2em;
+    border-radius: 15%;
+    color: black;
+    background-color: rgb(66, 244, 152);
+    border-color: black;
+}
+
+
+

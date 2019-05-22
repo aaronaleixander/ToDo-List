@@ -4,9 +4,9 @@ var ToDoItem = (function () {
     return ToDoItem;
 }());
 window.onload = function () {
-    var addBtn = document.querySelector("#create-item > button");
+    var addBtn = document.querySelector("#add-item");
     addBtn.onclick = processNewItem;
-    var readItemBtn = document.querySelector("#read-item > button");
+    var readItemBtn = document.querySelector("#read-item");
     readItemBtn.onclick = readItem;
 };
 var itemKey = "todo";
@@ -35,7 +35,7 @@ function toggleItemComplete() {
     currItem.classList.toggle("completed");
     var title = currItem.innerText;
     var desc = currItem.getAttribute("data-desc");
-    alert("You completed " + title + ":" + desc);
+    alert("You completed " + title + " : " + desc);
 }
 function clearForm() {
     var textElements = document.querySelectorAll("input[type=text], textarea");
@@ -74,3 +74,5 @@ function getItemFromForm() {
     item.urgency = urgencyElem.options[urgencyElem.selectedIndex].text;
     return item;
 }
+
+

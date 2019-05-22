@@ -8,55 +8,58 @@
     <meta name="description" content="Create a free to do list.">
     <link rel="stylesheet" href="css/site.css">
     <link rel="stylesheet" href="css/datepicker.min.css">
- 
-</head>
-
-    <body>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+ </head>
+    <body id="grad" >
         <header>
-            <h1>Create your ToDo List</h1>
+            <h1>ToDo List</h1>
         </header>
         <div id="create-item">
-            <label for="title">Title: </label>
+            <label id="lbl" for="title">Title: </label>
             <input id="title" type="text">
             <span>*</span>
-            <br>
+            <br><br>
     
-            <label for="description">Description: </label>
+            <label id="lbl" for="description">Description: </label>
             <textarea id="description" rows="8" cols="25"></textarea>
             <span></span>
-            <br>
+            <br><br>
     
-            <label for="start-date">Start Date: </label>
+            <label id="lbl" for="start-date">Start Date: </label>
             <input id="start-date" class="due-date" type="text">
             <span></span>
-            <br>
+            <br><br>
     
-            <label for="end-date">End Date: </label>
+            <label id="lbl" for="end-date">End Date: </label>
             <input id="end-date" class="due-date" type="text">
             <span></span>
-            <br>
+            <br><br>
     
-            <label for="is-complete">Is Complete?</label>
+            <label id="lbl" for="is-complete">Is Complete?</label>
             <input type="checkbox" id="is-complete">
-            <br>
+            <br><br>
     
-            <label>Choose an urgency:</label>
+            <label id="lbl">Choose an urgency:</label>
             <select id="urgency">
                 <option value="L">Low</option>
                 <option value="M">Medium</option>
                 <option value="H">High</option>
             </select>
-            <br>
-    
-            <button type="button">Add ToDo Item</button>
-    
+
         </div>
-        <div id="read-item">
-            <button type="button">Read Item</button>
+        <br><br>
+
+        <div id="buttons">
+            <button id="add-item" type="button">Add ToDo Item</button>
+            <button id="read-item" type="button">Read Item</button>
         </div>
-    
+
         <div id="todo-list">
+            <h2 id="sched">Schedule</h2>
         </div>
+        <br><br>
+
+
 
         <script src="scripts/datepicker.min.js"></script>
         <script src="scripts/mainTS.js"></script>
@@ -69,6 +72,7 @@
                 datepicker(allDateElem[i]);
             }
         </script>
+        
 
 </body>
 </html>
